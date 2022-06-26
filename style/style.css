@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+}
+
+.show-players {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+.player1::before {
+    content: "\2B55";
+}
+
+.player2::before {
+    content: "\274C";
+}
+
+.playerActive::after {
+    content: "\1F3AE";
+}
+
+.stage {
+    margin-top: 2rem;
+    width: 308px;
+    height: 308px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 4px;
+    background-color: rgb(145, 144, 144);
+}
+
+.square {
+    background-color: rgb(241, 241, 187);
+}
+
+.squareWin {
+    background-color: lightgreen;
+}
+
+.button {
+    margin-top: 1rem;
+    padding: 5px 10px;
+    background-color: brown;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.symbol-o::after {
+    line-height: 100px;
+    content: "\2B55";
+    font-size: 2.5rem;
+}
+.symbol-x::after {
+    line-height: 100px;
+    content: "\274C";
+    font-size: 2.5rem;
+}
